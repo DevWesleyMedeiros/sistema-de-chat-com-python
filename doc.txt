@@ -1,0 +1,42 @@
+1) Instalar o flet - via pip install flet
+    pode ser pelo prompet de comando, dentro da pasta do projeto ou via terminal no própio vs code -- "pip install flet"
+
+Flet - constroi back e front de um mesmo sistema ou site
+    ele integra o python com tecnologia do flutter que funciona como uma compatibilidade entre diferentes plataformas, ultilizando o mesmo código
+    Por exemplo: com o mesmo código, eu posso rodar o meu site ou app dentro do desktop, criar um site ou um sitema
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
+FUNCIONALIDADES DO MEU SISTEMA:
+# Passo 1 botão de iniciar o site
+# Passo 2 popup para entrar no site
+# Quando entrar no chat:
+    # mostrar mensagem de entrada no site
+    # O campo e botão de enviar mensagem
+# A cada mensagem que você envia(aparece para todo mundo):
+    # Nome: texto da mensagem
+------------------------------------------------------------------------------------------
+PARA NÓS CRIARMOS UM SITE USANDO O FLET (SEMPRE SERÁ ESSES TRÊS PASSOS)
+passo 1 - Importar a biblioteca do flet
+passo 2 - definir uma função que vai gerenciar minha página
+    virá o que queremos que apareca na página
+    adicionamos a nossa página
+passo 3 - Executar a função, fazendo uma chamada
+==========================================================================================
+TRABALHANDO COM FLET:
+
+import flet as ft
+
+
+def main(pagina):
+    texto = ft.Text("Olá, mundo!") # O que queremos dentro de nossa página
+    pagina.add(texto) # adicionamos a nossa página aquilo que queremos ver
+
+ft.app(target=main, view=ft.WEB_BROWSER) 
+    - view=ft.WEB_BROWSER Para ver no formato site, ao invés de appView
+    - target=main para indicar que esta é a página principal que deve ser carregada
+
